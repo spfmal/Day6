@@ -1,21 +1,48 @@
-*{
-  margin:0;
-  background-color: rgb(218, 185, 226);
-}
-button{
-  background-color: rgb(138, 159, 228);
-  font-size: none;
-  font-family: Arial, Helvetica, sans-serif;
-  cursor: pointer;
-  border-radius: 40px;
-}h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 20px;
-  color: #6c6c6c;
-  margin-bottom: 8px;
-}
-h1{
-  font-family: 'Arial', sans-serif;
-  color: #c184d0; 
-  background-color: rgb(78, 62, 113); opacity: 0.5;
-}
+head,body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#000000, rgb(71, 71, 71));
+  }
+  
+  .slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+  }
+  .slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 48px;
+    border: none;
+    background: white; opacity: 50%;
+    cursor: pointer;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  

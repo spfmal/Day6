@@ -1,45 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendar</title>
-    <style>
-*{
-  margin:0;
-  background-color: rgb(218, 185, 226);
-}
-button{
-  background-color: rgb(138, 159, 228);
-  font-size: none;
-  font-family: Arial, Helvetica, sans-serif;
-  cursor: pointer;
-  border-radius: 40px;
-}h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 20px;
-  color: #6c6c6c;
-  margin-bottom: 8px;
-}
-h1{
-  font-family: 'Arial', sans-serif;
-  color: #c184d0; 
-  background-color: rgb(78, 62, 113); opacity: 0.5;
-}
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>이미지 슬라이드(캐러셀) 만들기 1</title>
 </head>
 <body>
-    <h1>Calendar (with Memo)</h1>
-    <h2 id="calendar-title"></h2>
-    <div id="calendar">
+<div class="slider-container">
+  <div class="slider-track">
+    <div class="slide">
+      <img src="갤럭시 광고.jpg" alt="Image 1">
     </div>
-    <div id="memoPopup" class="memo-popup">
-      <textarea id="memoText" placeholder="메모를 작성해주세요."></textarea>
-      <button onclick="saveMemo()">일정 저장</button>
+    <div class="slide">
+      <img src="아이폰 광고.jpg" alt="Image 2">
     </div>
-    <button onclick="showPreviousMonth()">Previous Month</button>
-    <button onclick="showNextMonth()">Next Month</button>
-    <script src="script.js">
-    </script>
+    <div class="slide">
+      <img src="폰 광고.jpg" alt="Image 3">
+    </div>
+    <div class="slide">
+      <img src="대상혁.jpg" alt="Image 4">
+    </div>
+    <div class="slide">
+      <img src="거북이 포스터.jpg" alt="Image 5">
+    </div>
+    <div class="slide">
+      <img src="poster.jpg" alt="Image 6">
+    </div>
+    <div class="slide">
+      <img src="sleep well.jpg" alt="Image 7">
+    </div>
+    <!-- 필요할 시 슬라이드 추가 -->
+  </div>
+  <button class="prev-btn">&lt;</button>
+  <button class="next-btn">&gt;</button>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
